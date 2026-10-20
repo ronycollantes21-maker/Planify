@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi perfil | VoyaGo</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body class="pagina-perfil">
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></symbol>
+      <symbol id="i-user-box" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="10" r="3"/><path d="M6.5 19c.8-2.6 2.8-4 5.5-4s4.7 1.4 5.5 4"/></symbol>
+      <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3.5 6.5v13L9 17l6 3 5.5-2.5v-13L15 7 9 4Z"/><path d="M9 4v13M15 7v13"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5s-8-4.9-8-11A4.6 4.6 0 0 1 12 6.8a4.6 4.6 0 0 1 8 2.7c0 6.1-8 11-8 11Z"/></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18M7 15h3"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6 2 7.5 2 7.5H4S6 15 6 9Z"/><path d="M10 20a2 2 0 0 0 4 0"/></symbol>
+      <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3h0a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5h0a1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9v0a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></symbol>
+      <symbol id="i-logout" viewBox="0 0 24 24"><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"/><path d="M15 8l4 4-4 4M19 12H9"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4Z"/><path d="m13.5 6.5 4 4"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+      <symbol id="i-plane" viewBox="0 0 24 24"><path d="M10.2 13.8 3 12.5l1.3-1.8 7 .5 4.2-5.2a1.8 1.8 0 0 1 2.7 2.3L14 13.2l.5 7-1.8 1.3-1.3-7.2-3.4 3.5.2 2.4-1.4 1-1.4-3.2-3.2-1.4 1-1.4 2.4.2 3.6-3.1Z"/></symbol>
+      <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V6M3 14h18v4M21 14v-2.5A2.5 2.5 0 0 0 18.5 9H11v5"/><circle cx="7" cy="11" r="1.6"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l1.6-2.5h6.8L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.6"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></symbol>
+    </svg>
+
+    <header>
+      <a href="../../index.html">
+        <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="explorar.html">Explorar</a></li>
+          <li><a href="planificar.html">Planificar</a></li>
+          <li><a href="inspiracion.html">Inspiración</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <input type="search" class="header__buscador" placeholder="¿A dónde quieres ir?" aria-label="Buscar destinos" />
+        <a href="perfil.html" class="header__perfil" aria-label="Mi perfil" title="Mi perfil">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <section class="portada portada--perfil" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.1)), url('../images/Perfil\ fondo.jpg');">
+      <div class="portada__texto">
+        <p class="lema">Mi perfil</p>
+        <h1>Tus viajes,<br>tu historia</h1>
+        <p class="descripcion">
+          Gestiona tus reservas, guarda tus destinos favoritos y sigue explorando el mundo.
+        </p>
+      </div>
+      <p class="portada__frase">Viajar<br>también es<br>crecer</p>
+    </section>
+
+    <main class="mp">
+
+      <aside class="mp-menu">
+        <nav aria-label="Menú del perfil">
+          <a href="perfil.html" class="mp-menu__item mp-menu__item--activo" aria-current="page">
+            <svg class="ico" aria-hidden="true"><use href="#i-user-box"/></svg>Mi perfil
+          </a>
+          <a href="#" class="mp-menu__item">
+            <svg class="ico" aria-hidden="true"><use href="#i-map"/></svg>Mis viajes
+          </a>
+          <a href="favoritos.html" class="mp-menu__item">
+            <svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg>Favoritos
+          </a>
+          <a href="#" class="mp-menu__item">
+            <svg class="ico" aria-hidden="true"><use href="#i-card"/></svg>Métodos de pago
+          </a>
+          <a href="#" class="mp-menu__item">
+            <svg class="ico" aria-hidden="true"><use href="#i-bell"/></svg>Notificaciones
+          </a>
+          <a href="#" class="mp-menu__item">
+            <svg class="ico" aria-hidden="true"><use href="#i-gear"/></svg>Configuración
+          </a>
+          <hr class="mp-menu__linea" />
+          <a href="../../index.html" class="mp-menu__item" id="cerrar-sesion">
+            <svg class="ico" aria-hidden="true"><use href="#i-logout"/></svg>Cerrar sesión
+          </a>
+        </nav>
+      </aside>
+
+      <div class="mp-centro">
+
+        <section class="mp-usuario">
+          <div class="mp-usuario__avatar" aria-hidden="true">
+            <svg class="ico ico--relleno"><use href="#i-user"/></svg>
+          </div>
+          <div class="mp-usuario__datos">
+            <h2>Hola, Juan</h2>
+            <p class="mp-usuario__correo">juanperez@gmail.com</p>
+            <p class="mp-usuario__lema">Más viajes, más historias.</p>
+          </div>
+          <a href="#" class="mp-boton mp-boton--gris mp-usuario__editar">
+            <svg class="ico" aria-hidden="true"><use href="#i-pencil"/></svg>Editar perfil
+          </a>
+        </section>
+
+        <div class="mp-tabs" role="tablist">
+          <a href="#" role="tab" class="mp-tabs__tab mp-tabs__tab--activa" aria-selected="true">Mis viajes</a>
+          <a href="#" role="tab" class="mp-tabs__tab">Favoritos</a>
+          <a href="#" role="tab" class="mp-tabs__tab">Reseñas</a>
+          <a href="#" role="tab" class="mp-tabs__tab">Configuración</a>
+        </div>
+
+        <div class="mp-viajes">
+
+          <section>
+            <div class="mp-titulo">
+              <h2>Próximos viajes</h2>
+              <a href="#" class="mp-vertodos">Ver todos <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+
+            <article class="mp-viaje mp-viaje--proximo">
+              <img src="../images/bali.png" alt="Templo en Bali, Indonesia" />
+              <div class="mp-viaje__info">
+                <h3>Bali, Indonesia</h3>
+                <p class="mp-viaje__fecha">12 abr 2025 – 20 abr 2025</p>
+                <ul class="mp-viaje__meta">
+                  <li><svg class="ico" aria-hidden="true"><use href="#i-plane"/></svg>2 viajeros</li>
+                  <li><svg class="ico" aria-hidden="true"><use href="#i-bed"/></svg>8 noches</li>
+                </ul>
+              </div>
+              <div class="mp-viaje__accion">
+                <span class="mp-etiqueta">Confirmado</span>
+                <a href="#" class="mp-boton mp-boton--oscuro">Ver detalles</a>
+              </div>
+            </article>
+          </section>
+
+          <section>
+            <div class="mp-titulo">
+              <h2>Viajes anteriores</h2>
+              <a href="#" class="mp-vertodos">Ver todos <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+
+            <article class="mp-viaje">
+              <img src="../images/Tokio.png" alt="Templo en Tokio, Japón" />
+              <div class="mp-viaje__info">
+                <h3>Tokio, Japón</h3>
+                <p class="mp-viaje__fecha">15 mar 2024 – 23 mar 2024</p>
+                <ul class="mp-viaje__meta">
+                  <li><svg class="ico" aria-hidden="true"><use href="#i-plane"/></svg>2 viajeros</li>
+                  <li><svg class="ico" aria-hidden="true"><use href="#i-bed"/></svg>7 noches</li>
+                </ul>
+              </div>
+              <div class="mp-viaje__accion">
+                <span class="mp-etiqueta">Finalizado</span>
+                <a href="#" class="mp-boton mp-boton--gris">Ver detalles</a>
+              </div>
+            </article>
+
+            <article class="mp-viaje">
+              <img src="../images/Roma.png" alt="Coliseo en Roma, Italia" />
+              <div class="mp-viaje__info">
+                <h3>Roma, Italia</h3>
+                <p class="mp-viaje__fecha">10 jun 2023 – 18 jun 2023</p>
+                <ul class="mp-viaje__meta">
+                  <li><svg class="ico" aria-hidden="true"><use href="#i-user"/></svg>2 viajeros</li>
+                  <li><svg class="ico" aria-hidden="true"><use href="#i-bed"/></svg>6 noches</li>
+                </ul>
+              </div>
+              <div class="mp-viaje__accion">
+                <span class="mp-etiqueta">Finalizado</span>
+                <a href="#" class="mp-boton mp-boton--gris">Ver detalles</a>
+              </div>
+            </article>
+          </section>
+
+        </div>
+      </div>
+
+      <aside class="mp-lateral">
+
+        <section class="mp-caja">
+          <h2 class="mp-caja__titulo">Mis estadísticas</h2>
+          <div class="mp-stats">
+            <div class="mp-stat">
+              <span class="mp-stat__icono"><svg class="ico ico--relleno" aria-hidden="true"><use href="#i-plane"/></svg></span>
+              <div><strong>3</strong><span>Viajes realizados</span></div>
+            </div>
+            <div class="mp-stat">
+              <span class="mp-stat__icono"><svg class="ico ico--relleno" aria-hidden="true"><use href="#i-heart"/></svg></span>
+              <div><strong>12</strong><span>Destinos favoritos</span></div>
+            </div>
+            <div class="mp-stat">
+              <span class="mp-stat__icono"><svg class="ico ico--relleno" aria-hidden="true"><use href="#i-camera"/></svg></span>
+              <div><strong>48</strong><span>Fotos guardadas</span></div>
+            </div>
+            <div class="mp-stat">
+              <span class="mp-stat__icono"><svg class="ico ico--relleno" aria-hidden="true"><use href="#i-star"/></svg></span>
+              <div><strong>5</strong><span>Reseñas escritas</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mp-caja mp-guardados">
+          <div class="mp-titulo mp-titulo--chico">
+            <h2>Destinos guardados</h2>
+            <a href="favoritos.html" class="mp-vertodos">Ver todos <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <ul>
+            <li>
+              <img src="../images/santorini2.jpg" alt="Santorini" />
+              <div><strong>Santorini</strong><span>Grecia</span></div>
+              <button type="button" class="mp-guardados__corazon" aria-label="Quitar Santorini de favoritos"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></button>
+            </li>
+            <li>
+              <img src="../images/patagonia.jpg" alt="Patagonia" />
+              <div><strong>Patagonia</strong><span>Argentina</span></div>
+              <button type="button" class="mp-guardados__corazon" aria-label="Quitar Patagonia de favoritos"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></button>
+            </li>
+            <li>
+              <img src="../images/nueva york.png" alt="Nueva York" />
+              <div><strong>Nueva York</strong><span>Estados Unidos</span></div>
+              <button type="button" class="mp-guardados__corazon" aria-label="Quitar Nueva York de favoritos"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mp-aventura">
+          <span class="mp-aventura__avion" aria-hidden="true"><svg class="ico ico--relleno"><use href="#i-plane"/></svg></span>
+          <h2>¿Listo para tu<br />próxima aventura?</h2>
+          <p>Explora nuevos destinos y crea<br />experiencias inolvidables.</p>
+          <a href="explorar.html" class="mp-boton mp-boton--blanco">Explorar destinos <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </section>
+
+      </aside>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__contenido">
+        <div class="pie__marca">
+          <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+          <p>Explora. Planifica. Vive.</p>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="explorar.html">Explorar</a></li>
+            <li><a href="planificar.html">Planificar</a></li>
+            <li><a href="inspiracion.html">Inspiración</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Síguenos</h4>
+          <div class="pie__redes">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="pie__cierre">
+          <p class="pie__frase">Más que viajes,<br>son historias</p>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>© 2025 VoyaGo. Todos los derechos reservados.</p>
+        <p>Explora un mundo mejor.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

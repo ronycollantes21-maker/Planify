@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VoyaGo</title>
+
+    <link rel="stylesheet" href="SRC/styles/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    
+    <header>
+      <a href="index.html">
+        <img
+          src="SRC/images/logo-voyago.png"
+          alt="VoyaGo"
+          class="logo"
+        />
+      </a>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" class="activo">Inicio</a>
+          </li>
+
+          <li>
+            <a href="SRC/pages/explorar.html">Explorar</a>
+          </li>
+
+          <li>
+            <a href="SRC/pages/planificar.html">Planificar</a>
+          </li>
+
+          <li>
+            <a href="SRC/pages/inspiracion.html">Inspiración</a>
+          </li>
+
+          <li>
+            <a href="SRC/pages/favoritos.html">Favoritos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__acciones">
+        <input
+          type="search"
+          class="header__buscador"
+          placeholder="¿A dónde quieres ir?"
+          aria-label="Buscar destinos"
+        />
+
+        
+        <a
+          href="SRC/pages/perfil.html"
+          class="header__perfil"
+          aria-label="Mi perfil"
+          title="Mi perfil"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="8" r="4" />
+            <path d="M5 21v-2a7 7 0 0 1 14 0v2" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      
+      <section class="portada">
+        <p class="lema">Descubre. Planifica. Vive.</p>
+
+        <h1>El mundo <span>te espera</span></h1>
+
+        <p class="descripcion">
+          Descubre destinos increíbles, planifica tu viaje y vive
+          experiencias inolvidables.
+        </p>
+
+        <form class="buscador">
+          <label class="campo">
+            <span>📍</span>
+            <input
+              type="text"
+              placeholder="¿A dónde quieres ir?"
+              aria-label="Destino"
+            />
+          </label>
+
+          <label class="campo">
+            <span>📅</span>
+            <input
+              type="text"
+              placeholder="Fechas"
+              aria-label="Fechas del viaje"
+            />
+          </label>
+
+          <label class="campo">
+            <span>🧍</span>
+            <select aria-label="Número de viajeros">
+              <option>1 viajero</option>
+              <option selected>2 viajeros</option>
+              <option>3 viajeros</option>
+              <option>4 o más viajeros</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn-buscar">
+            Buscar
+          </button>
+        </form>
+
+        <p class="portada__frase">
+          Más que viajes,<br />
+          son historias
+        </p>
+      </section>
+
+      <section class="ventajas">
+        <article class="ventaja">
+          <span class="ventaja-icono">✈️</span>
+
+          <div>
+            <h3>Destinos únicos</h3>
+            <p>
+              Explora lugares increíbles seleccionados para ti.
+            </p>
+          </div>
+        </article>
+
+        <article class="ventaja">
+          <span class="ventaja-icono">📅</span>
+
+          <div>
+            <h3>Planificación fácil</h3>
+            <p>
+              Organiza tu viaje en un solo lugar, sin complicaciones.
+            </p>
+          </div>
+        </article>
+
+        <article class="ventaja">
+          <span class="ventaja-icono">🦺</span>
+
+          <div>
+            <h3>Viajes seguros</h3>
+            <p>
+              Tu tranquilidad es nuestra prioridad.
+            </p>
+          </div>
+        </article>
+
+        <article class="ventaja">
+          <span class="ventaja-icono">🤍</span>
+
+          <div>
+            <h3>Experiencias reales</h3>
+            <p>
+              Recomendaciones de viajeros como tú.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="destinos">
+        <div class="destinos__encabezado">
+          <div>
+            <h2>Destinos populares</h2>
+            <p>
+              Lugares que inspiran, experiencias que transforman.
+            </p>
+          </div>
+
+          <a href="#">Ver todos los destinos →</a>
+        </div>
+
+        <div class="destinos__tarjetas">
+          
+          <article class="tarjeta">
+            <div class="tarjeta__imagen">
+              <img
+                src="SRC/images/bali.png"
+                alt="Templo en Bali"
+              />
+
+              <button
+                type="button"
+                class="tarjeta__favorito"
+                aria-label="Agregar Bali a favoritos"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="tarjeta__info">
+              <h3><a href="SRC/pages/destino.html">Bali</a></h3>
+              <p class="tarjeta__pais">Indonesia</p>
+              <p class="tarjeta__rating">
+                ★ 4.8 <span>(12.3k reseñas)</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta__imagen">
+              <img
+                src="SRC/images/Tokio.png"
+                alt="Pagoda y monte Fuji en Tokio"
+              />
+
+              <button
+                type="button"
+                class="tarjeta__favorito"
+                aria-label="Agregar Tokio a favoritos"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="tarjeta__info">
+              <h3>Tokio</h3>
+              <p class="tarjeta__pais">Japón</p>
+              <p class="tarjeta__rating">
+                ★ 4.7 <span>(9.1k reseñas)</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta__imagen">
+              <img
+                src="SRC/images/Roma.png"
+                alt="Coliseo de Roma"
+              />
+
+              <button
+                type="button"
+                class="tarjeta__favorito"
+                aria-label="Agregar Roma a favoritos"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="tarjeta__info">
+              <h3>Roma</h3>
+              <p class="tarjeta__pais">Italia</p>
+              <p class="tarjeta__rating">
+                ★ 4.7 <span>(8.4k reseñas)</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta__imagen">
+              <img
+                src="SRC/images/Santorini.png"
+                alt="Casas blancas de Santorini"
+              />
+
+              <button
+                type="button"
+                class="tarjeta__favorito"
+                aria-label="Agregar Santorini a favoritos"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="tarjeta__info">
+              <h3>Santorini</h3>
+              <p class="tarjeta__pais">Grecia</p>
+              <p class="tarjeta__rating">
+                ★ 4.6 <span>(6.8k reseñas)</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <div class="tarjeta__imagen">
+              <img
+                src="SRC/images/nueva york.png"
+                alt="Horizonte de Nueva York"
+              />
+
+              <button
+                type="button"
+                class="tarjeta__favorito"
+                aria-label="Agregar Nueva York a favoritos"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="tarjeta__info">
+              <h3>Nueva York</h3>
+              <p class="tarjeta__pais">Estados Unidos</p>
+              <p class="tarjeta__rating">
+                ★ 4.5 <span>(10.2k reseñas)</span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="banner__contenido">
+          <span class="banner__etiqueta">
+            TU PRÓXIMA AVENTURA
+          </span>
+
+          <h2>
+            Planifica hoy,<br />
+            viaja mañana
+          </h2>
+
+          <p>
+            Encuentra ofertas exclusivas en hospedaje, tours y
+            experiencias alrededor del mundo.
+          </p>
+
+          <a
+            href="SRC/pages/explorar.html"
+            class="btn-secundario"
+          >
+            Explorar ofertas →
+          </a>
+        </div>
+
+        <p class="banner__frase">
+          Viajar también<br />
+          es vivir
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favoritos | VoyaGO</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="explorar.html">Explorar</a></li>
+          <li><a href="planificar.html">Planificar</a></li>
+          <li><a href="inspiracion.html">Inspiración</a></li>
+          <li><a href="favoritos.html" class="activo">Favoritos</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <input type="search" class="header__buscador" placeholder="¿A dónde quieres ir?" aria-label="Buscar destinos" />
+        <a href="perfil.html" class="header__perfil" aria-label="Mi perfil" title="Mi perfil">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="explorar-portada" style="background-image: linear-gradient(90deg, rgba(248, 250, 252, 0.9) 0%, rgba(248, 250, 252, 0.35) 55%, rgba(248, 250, 252, 0) 100%), url('../images/explorar.png.jpg'); min-height: 224px;">
+        <div class="explorar-portada__texto">
+          <p class="lema">Tus favoritos</p>
+          <h1>Lugares que<br>quieres conocer</h1>
+          <p class="descripcion">
+            Aquí guardas los destinos, experiencias y planes que te inspiran. Sigue soñando, sigue explorando.
+          </p>
+        </div>
+        <p class="explorar-portada__frase">Los mejores<br>lugares siempre<br>contigo.</p>
+      </section>
+
+      <section class="fv">
+        <div class="fv-barra">
+          <div class="fv-tabs">
+            <label class="fv-tab"><input type="radio" name="fv-tab" class="oculto" checked /><i class="fa-solid fa-table-cells-large"></i> Todos (6)</label>
+            <label class="fv-tab"><input type="radio" name="fv-tab" class="oculto" /><i class="fa-solid fa-location-dot"></i> Destinos (4)</label>
+            <label class="fv-tab"><input type="radio" name="fv-tab" class="oculto" /><i class="fa-solid fa-camera"></i> Experiencias (1)</label>
+            <label class="fv-tab"><input type="radio" name="fv-tab" class="oculto" /><i class="fa-solid fa-book-open"></i> Guías (1)</label>
+          </div>
+          <label class="fv-orden">
+            Ordenar por
+            <select>
+              <option>Más recientes</option>
+              <option>Más antiguos</option>
+              <option>Nombre (A-Z)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="fv-grid">
+        <article class="fv-card">
+          <div class="fv-card__img">
+            <img src="../images/bali.png" alt="Bali, Indonesia" />
+            <input type="checkbox" id="fv-c1" class="oculto" checked /><label for="fv-c1" class="fv-card__corazon" aria-label="Quitar Bali, Indonesia de favoritos"><i class="fa-regular fa-heart ico-off"></i><i class="fa-solid fa-heart ico-on"></i></label>
+            <span class="fv-card__badge">Destino</span>
+          </div>
+          <div class="fv-card__info">
+            <div class="fv-card__fila">
+              <h3><a href="destino.html">Bali, Indonesia</a></h3>
+              <button type="button" class="fv-card__mas" aria-label="Más opciones"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+            <p class="fv-card__lugar"><i class="fa-solid fa-location-dot"></i> Bali, Indonesia</p>
+            <p class="fv-card__desc">Playas, templos y una cultura que te conecta.</p>
+          </div>
+        </article>
+        <article class="fv-card">
+          <div class="fv-card__img">
+            <img src="../images/santorini2.jpg" alt="Santorini, Grecia" />
+            <input type="checkbox" id="fv-c2" class="oculto" checked /><label for="fv-c2" class="fv-card__corazon" aria-label="Quitar Santorini, Grecia de favoritos"><i class="fa-regular fa-heart ico-off"></i><i class="fa-solid fa-heart ico-on"></i></label>
+            <span class="fv-card__badge">Destino</span>
+          </div>
+          <div class="fv-card__info">
+            <div class="fv-card__fila">
+              <h3><a href="#">Santorini, Grecia</a></h3>
+              <button type="button" class="fv-card__mas" aria-label="Más opciones"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+            <p class="fv-card__lugar"><i class="fa-solid fa-location-dot"></i> Santorini, Grecia</p>
+            <p class="fv-card__desc">Atardeceres inolvidables y paisajes de ensueño.</p>
+          </div>
+        </article>
+        <article class="fv-card">
+          <div class="fv-card__img">
+            <img src="../images/kioto.jpg" alt="Tokio, Japón" />
+            <input type="checkbox" id="fv-c3" class="oculto" checked /><label for="fv-c3" class="fv-card__corazon" aria-label="Quitar Tokio, Japón de favoritos"><i class="fa-regular fa-heart ico-off"></i><i class="fa-solid fa-heart ico-on"></i></label>
+            <span class="fv-card__badge">Destino</span>
+          </div>
+          <div class="fv-card__info">
+            <div class="fv-card__fila">
+              <h3><a href="#">Tokio, Japón</a></h3>
+              <button type="button" class="fv-card__mas" aria-label="Más opciones"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+            <p class="fv-card__lugar"><i class="fa-solid fa-location-dot"></i> Tokio, Japón</p>
+            <p class="fv-card__desc">Tradición y tecnología en un solo lugar.</p>
+          </div>
+        </article>
+        <article class="fv-card">
+          <div class="fv-card__img">
+            <img src="../images/Roma.png" alt="Roma, Italia" />
+            <input type="checkbox" id="fv-c4" class="oculto" checked /><label for="fv-c4" class="fv-card__corazon" aria-label="Quitar Roma, Italia de favoritos"><i class="fa-regular fa-heart ico-off"></i><i class="fa-solid fa-heart ico-on"></i></label>
+            <span class="fv-card__badge">Destino</span>
+          </div>
+          <div class="fv-card__info">
+            <div class="fv-card__fila">
+              <h3><a href="#">Roma, Italia</a></h3>
+              <button type="button" class="fv-card__mas" aria-label="Más opciones"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+            <p class="fv-card__lugar"><i class="fa-solid fa-location-dot"></i> Roma, Italia</p>
+            <p class="fv-card__desc">Historia, arte y gastronomía en cada rincón.</p>
+          </div>
+        </article>
+        <article class="fv-card">
+          <div class="fv-card__img">
+            <img src="../images/nueva york.png" alt="Nueva York, Estados Unidos" />
+            <input type="checkbox" id="fv-c5" class="oculto" checked /><label for="fv-c5" class="fv-card__corazon" aria-label="Quitar Nueva York, Estados Unidos de favoritos"><i class="fa-regular fa-heart ico-off"></i><i class="fa-solid fa-heart ico-on"></i></label>
+            <span class="fv-card__badge">Destino</span>
+          </div>
+          <div class="fv-card__info">
+            <div class="fv-card__fila">
+              <h3><a href="#">Nueva York, Estados Unidos</a></h3>
+              <button type="button" class="fv-card__mas" aria-label="Más opciones"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+            <p class="fv-card__lugar"><i class="fa-solid fa-location-dot"></i> Nueva York, Estados Unidos</p>
+            <p class="fv-card__desc">Una ciudad que nunca deja de sorprender.</p>
+          </div>
+        </article>
+        <article class="fv-card">
+          <div class="fv-card__img">
+            <img src="../images/patagonia.jpg" alt="Patagonia, Argentina" />
+            <input type="checkbox" id="fv-c6" class="oculto" checked /><label for="fv-c6" class="fv-card__corazon" aria-label="Quitar Patagonia, Argentina de favoritos"><i class="fa-regular fa-heart ico-off"></i><i class="fa-solid fa-heart ico-on"></i></label>
+            <span class="fv-card__badge">Destino</span>
+          </div>
+          <div class="fv-card__info">
+            <div class="fv-card__fila">
+              <h3><a href="#">Patagonia, Argentina</a></h3>
+              <button type="button" class="fv-card__mas" aria-label="Más opciones"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+            <p class="fv-card__lugar"><i class="fa-solid fa-location-dot"></i> Patagonia, Argentina</p>
+            <p class="fv-card__desc">Naturaleza en su estado más puro.</p>
+          </div>
+        </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__contenido">
+        <div class="pie__marca">
+          <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+          <p>Explora. Planifica. Vive.</p>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="explorar.html">Explorar</a></li>
+            <li><a href="planificar.html">Planificar</a></li>
+            <li><a href="inspiracion.html">Inspiración</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Síguenos</h4>
+          <div class="pie__redes">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="pie__cierre">
+          <p class="pie__frase">Más que viajes,<br>son historias.</p>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>© 2025 VoyaGO. Todos los derechos reservados.</p>
+        <p>Explora un mundo mejor.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

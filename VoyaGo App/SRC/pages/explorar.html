@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorar | VoyaGo</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="explorar.html" class="activo">Explorar</a></li>
+          <li><a href="planificar.html">Planificar</a></li>
+          <li><a href="inspiracion.html">Inspiración</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <input type="search" class="header__buscador" placeholder="¿A dónde quieres ir?">
+        <a href="perfil.html" class="header__perfil" aria-label="Mi perfil" title="Mi perfil">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="24" height="24" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor"
+       stroke-width="1.8" stroke-linecap="round"
+       stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="8" r="4"/>
+    <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+  </svg>
+</a>
+      </div>
+    </header>
+    <main>
+    <section class="explorar-portada">
+  <div class="explorar-portada__texto">
+    <p class="lema">Explora. Descubre. Viaja.</p>
+    <h1>Explora destinos</h1>
+    <p class="descripcion">
+      Encuentra tu próximo destino y vive experiencias que te conecten con el mundo.
+    </p>
+  </div>
+  <p class="explorar-portada__frase">El mundo<br>es más grande<br>de lo que imaginas.</p>
+</section>
+<section class="explorar">
+  <aside class="filtros">
+    <label class="filtros__buscador">
+      <span>🔍</span>
+      <input type="text" placeholder="Buscar destinos, países o experiencias..." />
+    </label>
+
+    <form class="filtros__panel">
+      <details class="filtro" open>
+        <summary>Región</summary>
+        <div class="filtro__opciones">
+          <label><input type="checkbox" /> América</label>
+          <label><input type="checkbox" /> África</label>
+          <label><input type="checkbox" /> Europa</label>
+          <label><input type="checkbox" /> Oceanía</label>
+        </div>
+      </details>
+
+      <details class="filtro" open>
+        <summary>Tipo de viaje</summary>
+        <div class="filtro__opciones">
+          <label><input type="checkbox" /> Aventura</label>
+          <label><input type="checkbox" /> Playas</label>
+          <label><input type="checkbox" /> Cultura</label>
+          <label><input type="checkbox" /> Gastronomía</label>
+          <label><input type="checkbox" /> Naturaleza</label>
+        </div>
+      </details>
+
+      <details class="filtro" open>
+        <summary>Idioma</summary>
+        <div class="filtro__opciones">
+          <label><input type="checkbox" /> Español</label>
+          <label><input type="checkbox" /> Alemán</label>
+          <label><input type="checkbox" /> Inglés</label>
+          <label><input type="checkbox" /> Italiano</label>
+          <label><input type="checkbox" /> Francés</label>
+          <label><input type="checkbox" /> Otro</label>
+        </div>
+      </details>
+
+      <div class="filtro filtro--presupuesto">
+  <h3>Presupuesto <span>(por persona)</span></h3>
+
+  <div class="rango">
+    <div class="rango__pista"></div>
+    <input type="range" min="0" max="5000" value="0" step="100" aria-label="Presupuesto mínimo" />
+    <input type="range" min="0" max="5000" value="3500" step="100" aria-label="Presupuesto máximo" />
+  </div>
+
+  <div class="rango__valores">
+    <span>$ 0</span>
+    <span>$ 5.000+</span>
+  </div>
+</div>
+      </div>
+
+      <button type="reset" class="filtros__limpiar">↻ Limpiar filtros</button>
+    </form>
+  </aside>
+
+  <div class="resultados">
+    <div class="resultados__encabezado">
+  <h2>Resultados <span>(24 destinos)</span></h2>
+  <label class="resultados__orden">
+    Ordenar por:
+    <select>
+      <option>Más populares</option>
+      <option>Mejor valorados</option>
+      <option>Menor precio</option>
+      <option>Mayor precio</option>
+    </select>
+  </label>
+</div>
+
+<div class="resultados__tarjetas">
+  <article class="tarjeta">
+    <div class="tarjeta__imagen">
+      <img src="../images/bali2.jpg" alt="Templo en Bali" />
+      <button class="tarjeta__favorito" aria-label="Agregar a favoritos">♡</button>
+    </div>
+    <div class="tarjeta__info">
+      <h3><a href="destino.html">Bali</a></h3>
+      <p class="tarjeta__pais">Indonesia</p>
+      <p class="tarjeta__rating">★ 4.8 <span>(12.3k reseñas)</span></p>
+      <ul class="tarjeta__etiquetas"><li>🏔️ Naturaleza</li><li>🍃 Relax</li></ul>
+    </div>
+  </article>
+
+  <article class="tarjeta">
+    <div class="tarjeta__imagen">
+      <img src="../images/tokio2.jpg" alt="Pagoda y monte Fuji en Tokio" />
+      <button class="tarjeta__favorito" aria-label="Agregar a favoritos">♡</button>
+    </div>
+    <div class="tarjeta__info">
+      <h3>Tokio</h3>
+      <p class="tarjeta__pais">Japón</p>
+      <p class="tarjeta__rating">★ 4.7 <span>(9.1k reseñas)</span></p>
+      <ul class="tarjeta__etiquetas"><li>🏛️ Cultura</li><li>🍴 Gastronomía</li></ul>
+    </div>
+  </article>
+
+  <article class="tarjeta">
+    <div class="tarjeta__imagen">
+      <img src="../images/roma2.jpg" alt="Coliseo de Roma" />
+      <button class="tarjeta__favorito" aria-label="Agregar a favoritos">♡</button>
+    </div>
+    <div class="tarjeta__info">
+      <h3>Roma</h3>
+      <p class="tarjeta__pais">Italia</p>
+      <p class="tarjeta__rating">★ 4.7 <span>(8.4k reseñas)</span></p>
+      <ul class="tarjeta__etiquetas"><li>🏛️ Cultura</li><li>📷 Historia</li></ul>
+    </div>
+  </article>
+
+  <article class="tarjeta">
+    <div class="tarjeta__imagen">
+      <img src="../images/santorini2.jpg" alt="Casas blancas de Santorini" />
+      <button class="tarjeta__favorito" aria-label="Agregar a favoritos">♡</button>
+    </div>
+    <div class="tarjeta__info">
+      <h3>Santorini</h3>
+      <p class="tarjeta__pais">Grecia</p>
+      <p class="tarjeta__rating">★ 4.6 <span>(6.8k reseñas)</span></p>
+      <ul class="tarjeta__etiquetas"><li>☀️ Playas</li><li>🍃 Relax</li></ul>
+    </div>
+  </article>
+
+  <article class="tarjeta">
+    <div class="tarjeta__imagen">
+      <img src="../images/nueva york2.jpg" alt="Horizonte de Nueva York" />
+      <button class="tarjeta__favorito" aria-label="Agregar a favoritos">♡</button>
+    </div>
+    <div class="tarjeta__info">
+      <h3>Nueva York</h3>
+      <p class="tarjeta__pais">Estados Unidos</p>
+      <p class="tarjeta__rating">★ 4.5 <span>(10.2k reseñas)</span></p>
+      <ul class="tarjeta__etiquetas"><li>🏙️ Ciudades</li><li>🛍️ Compras</li></ul>
+    </div>
+  </article>
+    <article class="tarjeta">
+    <div class="tarjeta__imagen">
+      <img src="../images/cancun.jpg" alt="Playa en Cancún" />
+      <button class="tarjeta__favorito" aria-label="Agregar a favoritos">♡</button>
+    </div>
+    <div class="tarjeta__info">
+      <h3>Cancún</h3>
+      <p class="tarjeta__pais">México</p>
+      <p class="tarjeta__rating">★ 4.6 <span>(9.3k reseñas)</span></p>
+      <ul class="tarjeta__etiquetas"><li>☀️ Playas</li><li>🍸 Vida nocturna</li></ul>
+    </div>
+  </article>
+
+  <article class="tarjeta">
+    <div class="tarjeta__imagen">
+      <img src="../images/kioto.jpg" alt="Templo en Kioto" />
+      <button class="tarjeta__favorito" aria-label="Agregar a favoritos">♡</button>
+    </div>
+    <div class="tarjeta__info">
+      <h3>Kioto</h3>
+      <p class="tarjeta__pais">Japón</p>
+      <p class="tarjeta__rating">★ 4.7 <span>(7.1k reseñas)</span></p>
+      <ul class="tarjeta__etiquetas"><li>🏛️ Cultura</li><li>🍃 Naturaleza</li></ul>
+    </div>
+  </article>
+
+  <article class="tarjeta">
+    <div class="tarjeta__imagen">
+      <img src="../images/patagonia.jpg" alt="Montañas de la Patagonia" />
+      <button class="tarjeta__favorito" aria-label="Agregar a favoritos">♡</button>
+    </div>
+    <div class="tarjeta__info">
+      <h3>Patagonia</h3>
+      <p class="tarjeta__pais">Argentina</p>
+      <p class="tarjeta__rating">★ 4.8 <span>(5.4k reseñas)</span></p>
+      <ul class="tarjeta__etiquetas"><li>🏔️ Aventura</li><li>🍃 Naturaleza</li></ul>
+    </div>
+  </article>
+</div>
+  
+
+  <nav class="paginacion" aria-label="Paginación">
+    <a href="#" class="paginacion__flecha" aria-label="Página anterior">←</a>
+    <a href="#" class="paginacion__pagina paginacion__pagina--activa">1</a>
+    <a href="#" class="paginacion__pagina">2</a>
+    <a href="#" class="paginacion__pagina">3</a>
+    <a href="#" class="paginacion__pagina">4</a>
+    <a href="#" class="paginacion__pagina">5</a>
+    <a href="#" class="paginacion__flecha" aria-label="Página siguiente">→</a>
+  </nav>
+
+</div>    
+  
+</section>
+    </main>
+    <footer class="pie">
+  <div class="pie__contenido">
+    <div class="pie__marca">
+      <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+      <p>Explora. Planifica. Vive.</p>
+    </div>
+
+    <div class="pie__columna">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="../../index.html">Inicio</a></li>
+        <li><a href="explorar.html">Explorar</a></li>
+        <li><a href="planificar.html">Planificar</a></li>
+        <li><a href="inspiracion.html">Inspiración</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+      </ul>
+    </div>
+
+    <div class="pie__columna">
+      <h4>Ayuda</h4>
+      <ul>
+        <li><a href="#">Centro de ayuda</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="pie__columna">
+      <h4>Síguenos</h4>
+      <div class="pie__redes">
+  <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+    </div>
+    <div class="pie__cierre">
+    <p class="pie__frase">Más que viajes,<br>son historias</p>
+  </div>
+  </div>
+  <div class="pie__legal">
+    <p>© 2025 VoyaGo. Todos los derechos reservados.</p>
+    <p>Explora un mundo mejor.</p>
+  </div>
+</footer>
+  </body>
+</html>

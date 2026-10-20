@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bali | VoyaGO</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="explorar.html">Explorar</a></li>
+          <li><a href="planificar.html">Planificar</a></li>
+          <li><a href="inspiracion.html">Inspiración</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <input type="search" class="header__buscador" placeholder="¿A dónde quieres ir?" aria-label="Buscar destinos" />
+        <a href="perfil.html" class="header__perfil" aria-label="Mi perfil" title="Mi perfil">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main class="ds">
+      <nav class="ds-migas" aria-label="Ruta de navegación">
+        <a href="explorar.html">Explorar</a><i class="fa-solid fa-chevron-right"></i>
+        <a href="#">Asia</a><i class="fa-solid fa-chevron-right"></i>
+        <a href="#">Indonesia</a><i class="fa-solid fa-chevron-right"></i>
+        <span>Bali</span>
+      </nav>
+
+      <section class="ds-top">
+        <div class="ds-hero" id="ds-hero">
+          <input type="radio" name="ds-slide" id="ds-s1" class="oculto" checked />
+          <input type="radio" name="ds-slide" id="ds-s2" class="oculto" />
+          <input type="radio" name="ds-slide" id="ds-s3" class="oculto" />
+          <input type="radio" name="ds-slide" id="ds-s4" class="oculto" />
+          <input type="checkbox" id="ds-fav-cb" class="oculto" />
+          <label for="ds-fav-cb" class="ds-hero__fav" id="ds-fav" aria-label="Agregar a favoritos"><i class="fa-regular fa-heart ico-off"></i><i class="fa-solid fa-heart ico-on"></i></label>
+          <div class="ds-hero__texto">
+            <h1>Bali</h1>
+            <p class="ds-hero__pais">Indonesia</p>
+            <p class="ds-hero__rating"><i class="fa-solid fa-star"></i> 4.8 <span>(12.3k reseñas)</span></p>
+            <p class="ds-hero__lema">Playas, templos y una cultura que te conecta.</p>
+          </div>
+          <div class="ds-hero__puntos" id="ds-puntos">
+            <label for="ds-s1" aria-label="Imagen 1"></label><label for="ds-s2" aria-label="Imagen 2"></label><label for="ds-s3" aria-label="Imagen 3"></label><label for="ds-s4" aria-label="Imagen 4"></label>
+          </div>
+          <div class="ds-hero__flechas">
+            <span class="ds-fl ds-fl--1">
+              <label for="ds-s4" aria-label="Anterior"><i class="fa-solid fa-arrow-left"></i></label>
+              <label for="ds-s2" aria-label="Siguiente"><i class="fa-solid fa-arrow-right"></i></label>
+            </span>
+            <span class="ds-fl ds-fl--2">
+              <label for="ds-s1" aria-label="Anterior"><i class="fa-solid fa-arrow-left"></i></label>
+              <label for="ds-s3" aria-label="Siguiente"><i class="fa-solid fa-arrow-right"></i></label>
+            </span>
+            <span class="ds-fl ds-fl--3">
+              <label for="ds-s2" aria-label="Anterior"><i class="fa-solid fa-arrow-left"></i></label>
+              <label for="ds-s4" aria-label="Siguiente"><i class="fa-solid fa-arrow-right"></i></label>
+            </span>
+            <span class="ds-fl ds-fl--4">
+              <label for="ds-s3" aria-label="Anterior"><i class="fa-solid fa-arrow-left"></i></label>
+              <label for="ds-s1" aria-label="Siguiente"><i class="fa-solid fa-arrow-right"></i></label>
+            </span>
+          </div>
+        </div>
+
+        <aside class="ds-plan">
+          <h2>Planifica tu viaje</h2>
+          <div class="ds-plan__campo">
+            <i class="fa-regular fa-calendar-days"></i>
+            <div>
+              <label for="ds-fechas">Fechas</label>
+              <input type="text" id="ds-fechas" placeholder="Selecciona tus fechas" />
+            </div>
+            <i class="fa-solid fa-chevron-down ds-plan__flecha"></i>
+          </div>
+          <div class="ds-plan__campo">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <label for="ds-viajeros">Viajeros</label>
+              <select id="ds-viajeros">
+                <option>2 viajeros</option>
+                <option>1 viajero</option>
+                <option>3 viajeros</option>
+                <option>4+ viajeros</option>
+              </select>
+            </div>
+            <i class="fa-solid fa-chevron-down ds-plan__flecha"></i>
+          </div>
+          <a href="planificar.html" class="ds-plan__btn">Ver opciones</a>
+          <button type="button" class="ds-plan__guardar"><i class="fa-regular fa-bookmark"></i> Guardar en favoritos</button>
+        </aside>
+      </section>
+
+      <nav class="ds-tabs" aria-label="Secciones del destino">
+        <a href="#" class="ds-tabs__tab ds-tabs__tab--activa">Descripción</a>
+        <a href="#">Qué hacer</a>
+        <a href="#">Cómo llegar</a>
+        <a href="#">Alojamiento</a>
+        <a href="#">Consejos</a>
+        <a href="#">Reseñas</a>
+      </nav>
+
+      <section class="ds-info">
+        <div class="ds-desc">
+          <h2>Descripción</h2>
+          <p>Bali es un destino que combina naturaleza, espiritualidad y aventura. Sus playas de aguas cristalinas, templos milenarios y paisajes volcánicos lo convierten en un lugar único para todo tipo de viajeros.</p>
+          <ul class="ds-iconos">
+            <li><i class="fa-solid fa-leaf"></i><span>Naturaleza</span></li>
+            <li><i class="fa-solid fa-landmark"></i><span>Cultura</span></li>
+            <li><i class="fa-solid fa-utensils"></i><span>Gastronomía</span></li>
+            <li><i class="fa-regular fa-sun"></i><span>Playas</span></li>
+            <li><i class="fa-solid fa-mountain"></i><span>Aventura</span></li>
+          </ul>
+        </div>
+
+        <div class="ds-galeria">
+          <div class="in-titulo">
+            <h2>Galería</h2>
+            <a href="#">Ver todas <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="ds-galeria__grid">
+            <img src="../images/bali2.jpg" alt="Playa en Bali" class="ds-galeria__grande" />
+            <img src="../images/bali.png" alt="Templo en Bali" />
+            <img src="../images/Perfil fondo.jpg" alt="Cascadas en Bali" />
+            <img src="../images/explorar.png.jpg" alt="Montañas de Bali" />
+            <div class="ds-galeria__mas" style="background-image: linear-gradient(rgba(43,43,43,0.72), rgba(43,43,43,0.72)), url('../images/fondo2.png');">
+              <i class="fa-regular fa-image"></i>
+              <span>+12 fotos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-relacionados">
+        <div class="in-titulo">
+          <h2>Destinos relacionados</h2>
+          <a href="explorar.html">Ver más destinos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="ds-rel__grid">
+        <a href="#" class="ds-rel">
+          <img src="../images/kioto.jpg" alt="Tokio" />
+          <div><h3>Tokio</h3><p>Japón</p><span><i class="fa-solid fa-star"></i> 4.7</span></div>
+        </a>
+        <a href="#" class="ds-rel">
+          <img src="../images/santorini2.jpg" alt="Santorini" />
+          <div><h3>Santorini</h3><p>Grecia</p><span><i class="fa-solid fa-star"></i> 4.6</span></div>
+        </a>
+        <a href="#" class="ds-rel">
+          <img src="../images/Roma.png" alt="Roma" />
+          <div><h3>Roma</h3><p>Italia</p><span><i class="fa-solid fa-star"></i> 4.7</span></div>
+        </a>
+        <a href="#" class="ds-rel">
+          <img src="../images/nueva york.png" alt="Nueva York" />
+          <div><h3>Nueva York</h3><p>Estados Unidos</p><span><i class="fa-solid fa-star"></i> 4.5</span></div>
+        </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__contenido">
+        <div class="pie__marca">
+          <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+          <p>Explora. Planifica. Vive.</p>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="explorar.html">Explorar</a></li>
+            <li><a href="planificar.html">Planificar</a></li>
+            <li><a href="inspiracion.html">Inspiración</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Síguenos</h4>
+          <div class="pie__redes">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="pie__cierre">
+          <p class="pie__frase">Más que viajes,<br>son historias.</p>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>© 2025 VoyaGO. Todos los derechos reservados.</p>
+        <p>Explora un mundo mejor.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

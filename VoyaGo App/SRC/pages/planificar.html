@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planificar | VoyaGo</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="explorar.html">Explorar</a></li>
+          <li><a href="planificar.html" class="activo">Planificar</a></li>
+          <li><a href="inspiracion.html">Inspiración</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <input type="search" class="header__buscador" placeholder="¿A dónde quieres ir?">
+        <a href="perfil.html" class="header__perfil" aria-label="Mi perfil" title="Mi perfil">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="24" height="24" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor"
+       stroke-width="1.8" stroke-linecap="round"
+       stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="8" r="4"/>
+    <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+  </svg>
+</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="portada" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.1)), url('../images/fondo\ de\ planificar.jpg');">
+        <div class="portada__texto">
+          <p class="lema">Planifica tu viaje</p>
+          <h1>Convierte tus ideas<br>en una gran experiencia</h1>
+          <p class="descripcion">
+            Organiza cada detalle de tu viaje de forma fácil y personalizada.
+          </p>
+        </div>
+        <p class="portada__frase">Un mejor<br>viaje empieza<br>con un buen plan.</p>
+      </section>
+
+      <section class="planificador-layout">
+        <!-- Columna 1: Detalles del viaje -->
+        <aside class="detalles-viaje">
+          <h2>Detalles del viaje</h2>
+          <div class="detalle-grupo">
+            <label>Destino</label>
+            <div class="detalle-input">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" value="Bali, Indonesia" />
+            </div>
+          </div>
+
+          <div class="detalle-grupo">
+            <label>Fechas</label>
+            <div class="detalle-input">
+              <i class="fa-solid fa-calendar"></i>
+              <input type="text" value="12 abr 2025 – 20 abr 2025" />
+            </div>
+          </div>
+
+          <div class="detalle-grupo">
+            <label>Número de viajeros</label>
+            <div class="detalle-input">
+              <i class="fa-solid fa-user-group"></i>
+              <select>
+                <option>2 viajeros</option>
+                <option>1 viajero</option>
+                <option>3 viajeros</option>
+                <option>4+ viajeros</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="detalle-grupo">
+            <label>Tipo de viaje</label>
+            <div class="detalle-input">
+              <i class="fa-solid fa-briefcase"></i>
+              <select>
+                <option>Aventura</option>
+                <option>Relax</option>
+                <option>Cultura</option>
+                <option>Gastronomía</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="detalle-grupo">
+            <label>Presupuesto <span>(por persona)</span></label>
+            <div class="detalle-input">
+              <i class="fa-solid fa-wallet"></i>
+              <select>
+                <option>$ 1.000 - $ 2.500</option>
+                <option>$ 500 - $ 1.000</option>
+                <option>$ 2.500+</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn-crear-itinerario">Crear itinerario</button>
+        </aside>
+
+        <div class="itinerario-central">
+          <div class="itinerario__encabezado">
+            <div>
+              <h2>Itinerario sugerido</h2>
+              <p>Una propuesta basada en tus preferencias.</p>
+            </div>
+            <button class="btn-editar"><i class="fa-solid fa-pen"></i> Editar itinerario</button>
+          </div>
+
+          <div class="dias-tabs">
+            <button class="dia-tab activo-dia">
+              <span>Día 1</span>
+              <small>12 abr</small>
+            </button>
+            <button class="dia-tab">
+              <span>Día 2</span>
+              <small>13 abr</small>
+            </button>
+            <button class="dia-tab">
+              <span>Día 3</span>
+              <small>14 abr</small>
+            </button>
+            <button class="dia-tab">
+              <span>Día 4</span>
+              <small>15 abr</small>
+            </button>
+            <button class="dia-tab">
+              <span>Día 5</span>
+              <small>16 abr</small>
+            </button>
+            <button class="dia-tab">
+              <span>Día 6</span>
+              <small>17 abr</small>
+            </button>
+            <button class="dia-tab">
+              <span>Día 7</span>
+              <small>18 abr</small>
+            </button>
+            <button class="dia-tab">
+              <span>Día 8</span>
+              <small>19 abr</small>
+            </button>
+            <button class="dia-tab">
+              <span>Día 9</span>
+              <small>20 abr</small>
+            </button>
+          </div>
+
+          <div class="dia-card">
+            <div class="dia-card__titulo">
+              <h3>Día 1 - Llegada a Bali</h3>
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="punto"></span>
+                <div class="icono-actividad"><i class="fa-solid fa-plane"></i></div>
+                <span class="hora">08:00</span>
+                <div class="actividad-info">
+                  <h4>Llegada al aeropuerto</h4>
+                  <p>Aeropuerto Internacional Ngurah Rai (DPS)</p>
+                </div>
+                <i class="fa-solid fa-ellipsis option-dots"></i>
+              </div>
+
+              <div class="timeline-item">
+                <span class="punto"></span>
+                <div class="icono-actividad"><i class="fa-solid fa-car"></i></div>
+                <span class="hora">09:00</span>
+                <div class="actividad-info">
+                  <h4>Traslado al hotel</h4>
+                  <p>Transporte privado</p>
+                </div>
+                <i class="fa-solid fa-ellipsis option-dots"></i>
+              </div>
+
+              <div class="timeline-item">
+                <span class="punto"></span>
+                <div class="icono-actividad"><i class="fa-solid fa-hotel"></i></div>
+                <span class="hora">11:00</span>
+                <div class="actividad-info">
+                  <h4>Check-in en el hotel</h4>
+                  <p>The Kayon Jungle Resort</p>
+                </div>
+                <i class="fa-solid fa-ellipsis option-dots"></i>
+              </div>
+
+              <div class="timeline-item">
+                <span class="punto"></span>
+                <div class="icono-actividad"><i class="fa-solid fa-camera"></i></div>
+                <span class="hora">14:00</span>
+                <div class="actividad-info">
+                  <h4>Visita a Ubud</h4>
+                  <p>Templos, mercados y cultura local</p>
+                </div>
+                <i class="fa-solid fa-ellipsis option-dots"></i>
+              </div>
+
+              <div class="timeline-item">
+                <span class="punto"></span>
+                <div class="icono-actividad"><i class="fa-solid fa-utensils"></i></div>
+                <span class="hora">19:00</span>
+                <div class="actividad-info">
+                  <h4>Cena en Locavore</h4>
+                  <p>Cocina local e internacional</p>
+                </div>
+                <i class="fa-solid fa-ellipsis option-dots"></i>
+              </div>
+            </div>
+
+            <button class="btn-agregar-actividad">
+              <i class="fa-solid fa-plus"></i> Agregar actividad
+            </button>
+          </div>
+        </div>
+
+        <aside class="resumen-viaje">
+          <div class="vista-previa-card">
+            <h3>Vista previa del viaje</h3>
+            <img src="../images/bali2.jpg" alt="Bali" />
+            <h4>Bali, Indonesia</h4>
+            <p>12 abr 2025 – 20 abr 2025</p>
+            <div class="resumen-iconos">
+              <span><i class="fa-solid fa-user"></i> 2 viajeros</span>
+              <span><i class="fa-solid fa-moon"></i> 8 noches</span>
+            </div>
+          </div>
+
+          <div class="estimacion-card">
+            <h3>Estimación de costo <span>(por persona)</span></h3>
+            <ul>
+              <li><span><i class="fa-solid fa-plane"></i> Vuelos</span> <strong>$ 850</strong></li>
+              <li><span><i class="fa-solid fa-hotel"></i> Alojamiento</span> <strong>$ 600</strong></li>
+              <li><span><i class="fa-solid fa-car"></i> Transporte</span> <strong>$ 250</strong></li>
+              <li><span><i class="fa-solid fa-camera"></i> Actividades</span> <strong>$ 400</strong></li>
+              <li><span><i class="fa-solid fa-utensils"></i> Alimentación</span> <strong>$ 300</strong></li>
+            </ul>
+            <div class="total-estimado">
+              <span>Total estimado</span>
+              <strong>$ 2.400</strong>
+            </div>
+            <a href="reserva.html" class="btn-guardar-plan">
+              <i class="fa-solid fa-bookmark"></i> Reservar este viaje
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__contenido">
+        <div class="pie__marca">
+          <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+          <p>Explora. Planifica. Vive.</p>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="explorar.html">Explorar</a></li>
+            <li><a href="planificar.html">Planificar</a></li>
+            <li><a href="inspiracion.html">Inspiración</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Síguenos</h4>
+          <div class="pie__redes">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="pie__cierre">
+          <p class="pie__frase">Más que viajes,<br>son historias</p>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>© 2025 VoyaGo. Todos los derechos reservados.</p>
+        <p>Explora un mundo mejor.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inspiración | VoyaGO</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="explorar.html">Explorar</a></li>
+          <li><a href="planificar.html">Planificar</a></li>
+          <li><a href="inspiracion.html" class="activo">Inspiración</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <input type="search" class="header__buscador" placeholder="¿A dónde quieres ir?" aria-label="Buscar destinos" />
+        <a href="perfil.html" class="header__perfil" aria-label="Mi perfil" title="Mi perfil">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="explorar-portada" style="background-image: linear-gradient(90deg, rgba(248, 250, 252, 0.9) 0%, rgba(248, 250, 252, 0.3) 45%, rgba(15, 23, 42, 0.55) 100%), url('../images/portada.png'); background-position: center 35%; min-height: 208px;">
+        <div class="explorar-portada__texto">
+          <p class="lema">Inspírate</p>
+          <h1>Historias que<br>te llevan más lejos</h1>
+          <p class="descripcion">
+            Descubre experiencias, consejos y guías de viaje para vivir el mundo de otra manera.
+          </p>
+        </div>
+        <p class="explorar-portada__frase">Viajar<br>inspira<br>otras versiones<br>de ti.</p>
+      </section>
+
+      <section class="in">
+        <div class="in-chips">
+          <label class="in-chip"><input type="radio" name="in-chip" class="oculto" checked /><i class="fa-solid fa-mountain"></i> Todos</label>
+          <label class="in-chip"><input type="radio" name="in-chip" class="oculto" /><i class="fa-solid fa-location-dot"></i> Destinos</label>
+          <label class="in-chip"><input type="radio" name="in-chip" class="oculto" /><i class="fa-solid fa-lightbulb"></i> Consejos</label>
+          <label class="in-chip"><input type="radio" name="in-chip" class="oculto" /><i class="fa-solid fa-camera"></i> Experiencias</label>
+          <label class="in-chip"><input type="radio" name="in-chip" class="oculto" /><i class="fa-solid fa-book-open"></i> Guías</label>
+          <label class="in-chip"><input type="radio" name="in-chip" class="oculto" /><i class="fa-solid fa-landmark"></i> Cultura</label>
+          <label class="in-chip"><input type="radio" name="in-chip" class="oculto" /><i class="fa-solid fa-utensils"></i> Gastronomía</label>
+          <label class="in-chip"><input type="radio" name="in-chip" class="oculto" /><i class="fa-solid fa-person-hiking"></i> Aventura</label>
+        </div>
+
+        <div class="in-layout">
+          <div class="in-principal">
+            <div class="in-titulo">
+              <h2>Artículos destacados</h2>
+              <a href="#">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="in-arts">
+            <article class="in-art">
+              <img src="../images/kioto.jpg" alt="10 destinos increíbles en Asia que debes conocer" />
+              <div class="in-art__cuerpo">
+                <span class="in-etiqueta">Destinos</span>
+                <h3>10 destinos increíbles en Asia que debes conocer</h3>
+                <p>Desde templos milenarios hasta ciudades futuristas, Asia tiene algo para todos los viajeros.</p>
+                <small><i class="fa-regular fa-clock"></i> 5 min de lectura</small>
+              </div>
+            </article>
+            <article class="in-art">
+              <img src="../images/santorini2.jpg" alt="Cómo planificar tu primer viaje a Europa" />
+              <div class="in-art__cuerpo">
+                <span class="in-etiqueta">Consejos</span>
+                <h3>Cómo planificar tu primer viaje a Europa</h3>
+                <p>Te compartimos una guía práctica con todo lo que necesitas saber antes de tu aventura.</p>
+                <small><i class="fa-regular fa-clock"></i> 7 min de lectura</small>
+              </div>
+            </article>
+            <article class="in-art">
+              <img src="../images/Perfil fondo.jpg" alt="La magia de viajar solo" />
+              <div class="in-art__cuerpo">
+                <span class="in-etiqueta">Experiencias</span>
+                <h3>La magia de viajar solo</h3>
+                <p>Una experiencia que te reta, te transforma y te conecta con el mundo de una forma única.</p>
+                <small><i class="fa-regular fa-clock"></i> 6 min de lectura</small>
+              </div>
+            </article>
+            </div>
+
+            <div class="in-titulo in-titulo--comunidad">
+              <h2>Historias de la comunidad</h2>
+              <a href="#">Ver todas <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="in-hists">
+            <article class="in-hist">
+              <div class="in-hist__cab">
+                <span class="in-hist__avatar"><i class="fa-solid fa-user"></i></span>
+                <div class="in-hist__user"><strong>sofiaalvarez</strong><small>Bali, Indonesia</small></div>
+                <span class="in-hist__likes"><i class="fa-regular fa-heart"></i> 124</span>
+              </div>
+              <img src="../images/bali2.jpg" alt="Bali, Indonesia" />
+              <p>“Un lugar que te cambia la vida...”</p>
+            </article>
+            <article class="in-hist">
+              <div class="in-hist__cab">
+                <span class="in-hist__avatar"><i class="fa-solid fa-user"></i></span>
+                <div class="in-hist__user"><strong>diegoramirez</strong><small>Kioto, Japón</small></div>
+                <span class="in-hist__likes"><i class="fa-regular fa-heart"></i> 89</span>
+              </div>
+              <img src="../images/kioto.jpg" alt="Kioto, Japón" />
+              <p>“Cultura, historia y paisajes únicos.”</p>
+            </article>
+            <article class="in-hist">
+              <div class="in-hist__cab">
+                <span class="in-hist__avatar"><i class="fa-solid fa-user"></i></span>
+                <div class="in-hist__user"><strong>valentinacastro</strong><small>Santorini, Grecia</small></div>
+                <span class="in-hist__likes"><i class="fa-regular fa-heart"></i> 203</span>
+              </div>
+              <img src="../images/santorini2.jpg" alt="Santorini, Grecia" />
+              <p>“Atardeceres que no se olvidan.”</p>
+            </article>
+            <article class="in-hist">
+              <div class="in-hist__cab">
+                <span class="in-hist__avatar"><i class="fa-solid fa-user"></i></span>
+                <div class="in-hist__user"><strong>andreslopez</strong><small>Patagonia, Argentina</small></div>
+                <span class="in-hist__likes"><i class="fa-regular fa-heart"></i> 97</span>
+              </div>
+              <img src="../images/patagonia.jpg" alt="Patagonia, Argentina" />
+              <p>“Naturaleza en su estado puro.”</p>
+            </article>
+            </div>
+          </div>
+
+          <aside class="in-lateral">
+            <div class="in-comparte" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.85)), url('../images/fondo2.png');">
+              <i class="fa-solid fa-plane in-comparte__avion"></i>
+              <h3>Comparte<br>tu historia</h3>
+              <p>Tu experiencia puede inspirar a otros viajeros.</p>
+              <a href="#" class="in-comparte__btn">Escribir un artículo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="in-news">
+              <div class="in-news__cab">
+                <h3>Recibe inspiración<br>en tu correo</h3>
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <p>Suscríbete y recibe las mejores historias, destinos y consejos.</p>
+              <form class="in-news__form" action="#">
+                <input type="email" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" />
+                <button type="submit" aria-label="Suscribirme"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__contenido">
+        <div class="pie__marca">
+          <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+          <p>Explora. Planifica. Vive.</p>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="explorar.html">Explorar</a></li>
+            <li><a href="planificar.html">Planificar</a></li>
+            <li><a href="inspiracion.html">Inspiración</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Síguenos</h4>
+          <div class="pie__redes">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="pie__cierre">
+          <p class="pie__frase">Más que viajes,<br>son historias.</p>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>© 2025 VoyaGO. Todos los derechos reservados.</p>
+        <p>Explora un mundo mejor.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

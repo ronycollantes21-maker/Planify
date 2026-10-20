@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva | VoyaGo</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="explorar.html">Explorar</a></li>
+          <li><a href="planificar.html">Planificar</a></li>
+          <li><a href="inspiracion.html">Inspiración</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <input type="search" class="header__buscador" placeholder="¿A dónde quieres ir?">
+        <a href="perfil.html" class="header__perfil" aria-label="Mi perfil" title="Mi perfil">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="24" height="24" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <div class="rv-pasos">
+      <ol class="rv-pasos__lista">
+        <li class="rv-paso rv-paso--hecho">
+          <span class="rv-paso__num"><i class="fa-solid fa-check"></i></span>
+          <span class="rv-paso__texto">Selección</span>
+        </li>
+        <li class="rv-paso__linea rv-paso__linea--hecha"></li>
+        <li class="rv-paso rv-paso--hecho">
+          <span class="rv-paso__num"><i class="fa-solid fa-check"></i></span>
+          <span class="rv-paso__texto">Datos de viaje</span>
+        </li>
+        <li class="rv-paso__linea rv-paso__linea--hecha"></li>
+        <li class="rv-paso rv-paso--actual">
+          <span class="rv-paso__num">3</span>
+          <span class="rv-paso__texto">Pago</span>
+        </li>
+        <li class="rv-paso__linea"></li>
+        <li class="rv-paso">
+          <span class="rv-paso__num">4</span>
+          <span class="rv-paso__texto">Confirmación</span>
+        </li>
+      </ol>
+    </div>
+
+    <main class="rv">
+      <section class="rv-titulo">
+        <p class="lema">Estás a un paso</p>
+        <h1>Completa tu reserva</h1>
+        <p class="rv-titulo__sub">Revisa los detalles de tu viaje y selecciona tu método de pago.</p>
+        <p class="rv-titulo__frase">Grandes<br>experiencias<br>te esperan.</p>
+      </section>
+
+      <section class="rv-layout">
+        <div class="rv-form">
+          <div class="rv-bloque__encabezado">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <h2>Información del viajero</h2>
+              <p>Ingresa los datos de los viajeros que realizarán el viaje.</p>
+            </div>
+          </div>
+
+          <div class="rv-viajero">
+            <h3>Viajero 1 (Adulto)</h3>
+            <div class="rv-fila">
+              <div class="rv-campo">
+                <label for="nombre1">Nombre completo</label>
+                <input type="text" id="nombre1" value="Juan Pérez" />
+              </div>
+              <div class="rv-campo">
+                <label for="doc1">Documento</label>
+                <select id="doc1">
+                  <option>Cédula de ciudadanía</option>
+                  <option>Pasaporte</option>
+                  <option>Cédula de extranjería</option>
+                </select>
+              </div>
+              <div class="rv-campo">
+                <label for="num1">Número de documento</label>
+                <input type="text" id="num1" value="1.234.567.890" />
+              </div>
+            </div>
+          </div>
+
+          <div class="rv-viajero">
+            <h3>Viajero 2 (Adulto)</h3>
+            <div class="rv-fila">
+              <div class="rv-campo">
+                <label for="nombre2">Nombre completo</label>
+                <input type="text" id="nombre2" value="María Gómez" />
+              </div>
+              <div class="rv-campo">
+                <label for="doc2">Documento</label>
+                <select id="doc2">
+                  <option>Cédula de ciudadanía</option>
+                  <option>Pasaporte</option>
+                  <option>Cédula de extranjería</option>
+                </select>
+              </div>
+              <div class="rv-campo">
+                <label for="num2">Número de documento</label>
+                <input type="text" id="num2" value="1.098.765.432" />
+              </div>
+            </div>
+          </div>
+
+          <div class="rv-bloque__encabezado rv-bloque__encabezado--pago">
+            <i class="fa-regular fa-credit-card"></i>
+            <div>
+              <h2>Método de pago</h2>
+              <p>Selecciona un método de pago para confirmar tu reserva.</p>
+            </div>
+          </div>
+
+          <div class="rv-metodos">
+            <label class="rv-metodo"><input type="radio" name="rv-metodo" class="oculto" checked />
+              <i class="fa-regular fa-credit-card"></i> Tarjeta de crédito o débito
+            </label>
+            <label class="rv-metodo"><input type="radio" name="rv-metodo" class="oculto" />
+              <i class="fa-solid fa-building-columns"></i> Transferencia bancaria
+            </label>
+            <label class="rv-metodo"><input type="radio" name="rv-metodo" class="oculto" />
+              <i class="fa-brands fa-paypal"></i> PayPal
+            </label>
+          </div>
+
+          <div class="rv-tarjeta">
+            <div class="rv-campo rv-campo--num">
+              <label for="tarjeta">Número de tarjeta</label>
+              <div class="rv-input-icono">
+                <i class="fa-regular fa-credit-card"></i>
+                <input type="text" id="tarjeta" placeholder="1234 5678 9012 3456" />
+              </div>
+            </div>
+            <div class="rv-campo rv-campo--exp">
+              <label for="exp">Fecha de expiración</label>
+              <input type="text" id="exp" placeholder="MM / AA" />
+            </div>
+            <div class="rv-campo rv-campo--cvc">
+              <label for="cvc">Código de seguridad</label>
+              <div class="rv-input-icono rv-input-icono--der">
+                <input type="text" id="cvc" placeholder="CVC" />
+                <i class="fa-regular fa-circle-question"></i>
+              </div>
+            </div>
+            <div class="rv-campo rv-campo--nombre">
+              <label for="titular">Nombre en la tarjeta</label>
+              <input type="text" id="titular" placeholder="Juan Pérez" />
+            </div>
+          </div>
+
+          <label class="rv-guardar">
+            <input type="checkbox" checked />
+            <span class="rv-guardar__caja"><i class="fa-solid fa-check"></i></span>
+            Guardar este método de pago para futuras reservas
+          </label>
+        </div>
+
+        <aside class="rv-resumen">
+          <img src="../images/bali2.jpg" alt="Bali" class="rv-resumen__img" />
+          <h3 class="rv-resumen__destino">Bali, Indonesia</h3>
+          <div class="rv-resumen__datos">
+            <span><i class="fa-regular fa-calendar"></i> 12 abr 2025 &nbsp;–&nbsp; 20 abr 2025</span>
+            <span><i class="fa-regular fa-user"></i> 2 viajeros</span>
+            <span><i class="fa-regular fa-moon"></i> 8 noches</span>
+          </div>
+
+          <h3 class="rv-resumen__titulo">Detalle de precios</h3>
+          <ul class="rv-precios">
+            <li><span><i class="fa-solid fa-plane"></i> Vuelos (2)</span> <strong>$ 1.700</strong></li>
+            <li><span><i class="fa-solid fa-bed"></i> Alojamiento (8 noches)</span> <strong>$ 1.200</strong></li>
+            <li><span><i class="fa-solid fa-camera"></i> Actividades</span> <strong>$ 400</strong></li>
+            <li><span><i class="fa-solid fa-building-columns"></i> Impuestos y tasas</span> <strong>$ 250</strong></li>
+          </ul>
+
+          <div class="rv-total">
+            <span>Total a pagar</span>
+            <strong>$ 3.550 COP</strong>
+          </div>
+
+          <div class="rv-seguro">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>Tu información está segura</strong>
+              <p>Utilizamos encriptación de nivel bancario para proteger tus datos.</p>
+            </div>
+          </div>
+
+          <button type="button" class="rv-confirmar">
+            Confirmar reserva <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <p class="rv-legal">
+            Al confirmar, aceptas nuestros <a href="#">Términos y Condiciones</a> y <a href="#">Política de Privacidad</a>.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__contenido">
+        <div class="pie__marca">
+          <img src="../images/logo-voyago.png" alt="VoyaGo" class="logo" />
+          <p>Explora. Planifica. Vive.</p>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="explorar.html">Explorar</a></li>
+            <li><a href="planificar.html">Planificar</a></li>
+            <li><a href="inspiracion.html">Inspiración</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="pie__columna">
+          <h4>Síguenos</h4>
+          <div class="pie__redes">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="pie__cierre">
+          <p class="pie__frase">Más que viajes,<br>son historias.</p>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>© 2025 VoyaGO. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
